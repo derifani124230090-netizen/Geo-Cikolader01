@@ -1,0 +1,667 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/lib/sample-data.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "sampleKnownCoords",
+    ()=>sampleKnownCoords,
+    "sampleStations",
+    ()=>sampleStations,
+    "sampleSurveyInput",
+    ()=>sampleSurveyInput
+]);
+const sampleKnownCoords = {
+    x1: 534333,
+    y1: 9406796,
+    x2: 534334,
+    y2: 9406994
+};
+const sampleStations = [
+    {
+        stationName: 'POLLUT 7',
+        hi: 1.105,
+        targets: [
+            {
+                targetName: 'P9',
+                ht: 1.54,
+                horizontalAngleBiasa: {
+                    degrees: 37,
+                    minutes: 25,
+                    seconds: 16
+                },
+                horizontalAngleLB: {
+                    degrees: 217,
+                    minutes: 25,
+                    seconds: 36
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 4,
+                    seconds: 35
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 55,
+                    seconds: 28
+                },
+                sdBiasa: 86.75,
+                hdBiasa: 86.75,
+                vdBiasa: 0.113,
+                sdLB: 86.749,
+                hdLB: 86.749,
+                vdLB: -0.113
+            },
+            {
+                targetName: 'P2',
+                ht: 0.0,
+                horizontalAngleBiasa: {
+                    degrees: 269,
+                    minutes: 2,
+                    seconds: 46
+                },
+                horizontalAngleLB: {
+                    degrees: 89,
+                    minutes: 2,
+                    seconds: 50
+                },
+                verticalAngleBiasa: {
+                    degrees: 89,
+                    minutes: 59,
+                    seconds: 12
+                },
+                verticalAngleLB: {
+                    degrees: 270,
+                    minutes: 0,
+                    seconds: 50
+                },
+                sdBiasa: 99.915,
+                hdBiasa: 99.915,
+                vdBiasa: 0.246,
+                sdLB: 99.915,
+                hdLB: 99.915,
+                vdLB: -0.246
+            }
+        ]
+    },
+    {
+        stationName: 'P2',
+        hi: 1.57,
+        targets: [
+            {
+                targetName: 'P1',
+                ht: 1.51,
+                horizontalAngleBiasa: {
+                    degrees: 238,
+                    minutes: 45,
+                    seconds: 27
+                },
+                horizontalAngleLB: {
+                    degrees: 58,
+                    minutes: 45,
+                    seconds: 23
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 18,
+                    seconds: 49
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 41,
+                    seconds: 14
+                },
+                sdBiasa: 99.47,
+                hdBiasa: 99.469,
+                vdBiasa: -0.541,
+                sdLB: 99.47,
+                hdLB: 99.469,
+                vdLB: 0.541
+            },
+            {
+                targetName: 'P3',
+                ht: 1.57,
+                horizontalAngleBiasa: {
+                    degrees: 107,
+                    minutes: 28,
+                    seconds: 48
+                },
+                horizontalAngleLB: {
+                    degrees: 287,
+                    minutes: 28,
+                    seconds: 44
+                },
+                verticalAngleBiasa: {
+                    degrees: 89,
+                    minutes: 43,
+                    seconds: 8
+                },
+                verticalAngleLB: {
+                    degrees: 270,
+                    minutes: 16,
+                    seconds: 55
+                },
+                sdBiasa: 76.901,
+                hdBiasa: 76.9,
+                vdBiasa: 0.374,
+                sdLB: 76.901,
+                hdLB: 76.9,
+                vdLB: -0.374
+            }
+        ]
+    },
+    {
+        stationName: 'P3',
+        hi: 1.567,
+        targets: [
+            {
+                targetName: 'P2',
+                ht: 1.48,
+                horizontalAngleBiasa: {
+                    degrees: 61,
+                    minutes: 53,
+                    seconds: 9
+                },
+                horizontalAngleLB: {
+                    degrees: 241,
+                    minutes: 53,
+                    seconds: 4
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 14,
+                    seconds: 43
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 45,
+                    seconds: 20
+                },
+                sdBiasa: 76.885,
+                hdBiasa: 76.885,
+                vdBiasa: -0.331,
+                sdLB: 76.885,
+                hdLB: 76.885,
+                vdLB: 0.331
+            },
+            {
+                targetName: 'P4',
+                ht: 1.525,
+                horizontalAngleBiasa: {
+                    degrees: 279,
+                    minutes: 38,
+                    seconds: 18
+                },
+                horizontalAngleLB: {
+                    degrees: 99,
+                    minutes: 38,
+                    seconds: 15
+                },
+                verticalAngleBiasa: {
+                    degrees: 89,
+                    minutes: 7,
+                    seconds: 36
+                },
+                verticalAngleLB: {
+                    degrees: 270,
+                    minutes: 52,
+                    seconds: 27
+                },
+                sdBiasa: 55.886,
+                hdBiasa: 55.879,
+                vdBiasa: 0.853,
+                sdLB: 55.886,
+                hdLB: 55.879,
+                vdLB: -0.853
+            }
+        ]
+    },
+    {
+        stationName: 'P4',
+        hi: 1.58,
+        targets: [
+            {
+                targetName: 'P3',
+                ht: 1.559,
+                horizontalAngleBiasa: {
+                    degrees: 332,
+                    minutes: 50,
+                    seconds: 39
+                },
+                horizontalAngleLB: {
+                    degrees: 152,
+                    minutes: 50,
+                    seconds: 28
+                },
+                verticalAngleBiasa: {
+                    degrees: 89,
+                    minutes: 12,
+                    seconds: 40
+                },
+                verticalAngleLB: {
+                    degrees: 270,
+                    minutes: 47,
+                    seconds: 24
+                },
+                sdBiasa: 55.884,
+                hdBiasa: 55.877,
+                vdBiasa: 0.765,
+                sdLB: 55.884,
+                hdLB: 55.877,
+                vdLB: -0.765
+            },
+            {
+                targetName: 'P5',
+                ht: 1.481,
+                horizontalAngleBiasa: {
+                    degrees: 152,
+                    minutes: 49,
+                    seconds: 34
+                },
+                horizontalAngleLB: {
+                    degrees: 332,
+                    minutes: 49,
+                    seconds: 42
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 34,
+                    seconds: 39
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 25,
+                    seconds: 24
+                },
+                sdBiasa: 64.796,
+                hdBiasa: 64.798,
+                vdBiasa: -0.651,
+                sdLB: 64.796,
+                hdLB: 64.798,
+                vdLB: 0.651
+            }
+        ]
+    },
+    {
+        stationName: 'P5',
+        hi: 1.49,
+        targets: [
+            {
+                targetName: 'P4',
+                ht: 1.529,
+                horizontalAngleBiasa: {
+                    degrees: 243,
+                    minutes: 37,
+                    seconds: 20
+                },
+                horizontalAngleLB: {
+                    degrees: 63,
+                    minutes: 37,
+                    seconds: 32
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 34,
+                    seconds: 32
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 25,
+                    seconds: 30
+                },
+                sdBiasa: 64.829,
+                hdBiasa: 64.826,
+                vdBiasa: 0.653,
+                sdLB: 64.829,
+                hdLB: 64.826,
+                vdLB: -0.653
+            },
+            {
+                targetName: 'P6',
+                ht: 1.485,
+                horizontalAngleBiasa: {
+                    degrees: 119,
+                    minutes: 8,
+                    seconds: 29
+                },
+                horizontalAngleLB: {
+                    degrees: 299,
+                    minutes: 8,
+                    seconds: 24
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 33,
+                    seconds: 58
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 26,
+                    seconds: 4
+                },
+                sdBiasa: 54.539,
+                hdBiasa: 54.536,
+                vdBiasa: -0.541,
+                sdLB: 54.539,
+                hdLB: 54.536,
+                vdLB: 0.541
+            }
+        ]
+    },
+    {
+        stationName: 'P6',
+        hi: 1.445,
+        targets: [
+            {
+                targetName: 'P5',
+                ht: 1.42,
+                horizontalAngleBiasa: {
+                    degrees: 359,
+                    minutes: 59,
+                    seconds: 59
+                },
+                horizontalAngleLB: {
+                    degrees: 179,
+                    minutes: 59,
+                    seconds: 57
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 33,
+                    seconds: 58
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 26,
+                    seconds: 4
+                },
+                sdBiasa: 54.539,
+                hdBiasa: 54.536,
+                vdBiasa: -0.541,
+                sdLB: 54.539,
+                hdLB: 54.536,
+                vdLB: 0.541
+            },
+            {
+                targetName: 'P7',
+                ht: 0.556,
+                horizontalAngleBiasa: {
+                    degrees: 225,
+                    minutes: 54,
+                    seconds: 35
+                },
+                horizontalAngleLB: {
+                    degrees: 45,
+                    minutes: 54,
+                    seconds: 36
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 39,
+                    seconds: 32
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 20,
+                    seconds: 30
+                },
+                sdBiasa: 89.868,
+                hdBiasa: 89.863,
+                vdBiasa: -1.03,
+                sdLB: 89.868,
+                hdLB: 89.863,
+                vdLB: 1.03
+            }
+        ]
+    },
+    {
+        stationName: 'P7',
+        hi: 1.41,
+        targets: [
+            {
+                targetName: 'P6',
+                ht: 1.4,
+                horizontalAngleBiasa: {
+                    degrees: 259,
+                    minutes: 2,
+                    seconds: 41
+                },
+                horizontalAngleLB: {
+                    degrees: 79,
+                    minutes: 2,
+                    seconds: 9
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 8,
+                    seconds: 54
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 51,
+                    seconds: 8
+                },
+                sdBiasa: 89.863,
+                hdBiasa: 89.862,
+                vdBiasa: -0.232,
+                sdLB: 89.863,
+                hdLB: 89.862,
+                vdLB: 0.232
+            },
+            {
+                targetName: 'P8',
+                ht: 1.41,
+                horizontalAngleBiasa: {
+                    degrees: 91,
+                    minutes: 16,
+                    seconds: 54
+                },
+                horizontalAngleLB: {
+                    degrees: 271,
+                    minutes: 16,
+                    seconds: 17
+                },
+                verticalAngleBiasa: {
+                    degrees: 89,
+                    minutes: 32,
+                    seconds: 51
+                },
+                verticalAngleLB: {
+                    degrees: 270,
+                    minutes: 27,
+                    seconds: 11
+                },
+                sdBiasa: 99.092,
+                hdBiasa: 99.089,
+                vdBiasa: 0.779,
+                sdLB: 99.092,
+                hdLB: 99.089,
+                vdLB: -0.779
+            }
+        ]
+    },
+    {
+        stationName: 'P8',
+        hi: 0.0,
+        targets: [
+            {
+                targetName: 'P7',
+                ht: 0.0,
+                horizontalAngleBiasa: {
+                    degrees: 133,
+                    minutes: 59,
+                    seconds: 59
+                },
+                horizontalAngleLB: {
+                    degrees: 313,
+                    minutes: 59,
+                    seconds: 58
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 24,
+                    seconds: 8
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 35,
+                    seconds: 55
+                },
+                sdBiasa: 99.097,
+                hdBiasa: 99.094,
+                vdBiasa: -0.701,
+                sdLB: 99.097,
+                hdLB: 99.094,
+                vdLB: 0.701
+            },
+            {
+                targetName: 'P9',
+                ht: 1.42,
+                horizontalAngleBiasa: {
+                    degrees: 28,
+                    minutes: 31,
+                    seconds: 52
+                },
+                horizontalAngleLB: {
+                    degrees: 208,
+                    minutes: 31,
+                    seconds: 54
+                },
+                verticalAngleBiasa: {
+                    degrees: 89,
+                    minutes: 47,
+                    seconds: 40
+                },
+                verticalAngleLB: {
+                    degrees: 270,
+                    minutes: 12,
+                    seconds: 22
+                },
+                sdBiasa: 96.29,
+                hdBiasa: 96.289,
+                vdBiasa: 0.358,
+                sdLB: 96.29,
+                hdLB: 96.289,
+                vdLB: -0.358
+            }
+        ]
+    },
+    {
+        stationName: 'P9',
+        hi: 1.486,
+        targets: [
+            {
+                targetName: 'P8',
+                ht: 1.37,
+                horizontalAngleBiasa: {
+                    degrees: 251,
+                    minutes: 46,
+                    seconds: 45
+                },
+                horizontalAngleLB: {
+                    degrees: 71,
+                    minutes: 46,
+                    seconds: 41
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 20,
+                    seconds: 53
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 39,
+                    seconds: 9
+                },
+                sdBiasa: 96.297,
+                hdBiasa: 96.265,
+                vdBiasa: -0.583,
+                sdLB: 96.297,
+                hdLB: 96.265,
+                vdLB: 0.583
+            },
+            {
+                targetName: 'P1',
+                ht: 1.105,
+                horizontalAngleBiasa: {
+                    degrees: 107,
+                    minutes: 30,
+                    seconds: 37
+                },
+                horizontalAngleLB: {
+                    degrees: 287,
+                    minutes: 30,
+                    seconds: 47
+                },
+                verticalAngleBiasa: {
+                    degrees: 90,
+                    minutes: 3,
+                    seconds: 38
+                },
+                verticalAngleLB: {
+                    degrees: 269,
+                    minutes: 56,
+                    seconds: 24
+                },
+                sdBiasa: 86.749,
+                hdBiasa: 86.759,
+                vdBiasa: -0.079,
+                sdLB: 86.749,
+                hdLB: 86.759,
+                vdLB: 0.079
+            }
+        ]
+    }
+];
+const sampleSurveyInput = {
+    stations: sampleStations,
+    knownCoords: sampleKnownCoords
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$public$2f$LandingPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/public/LandingPage.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$AdminDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/admin/AdminDashboard.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+function Home() {
+    _s();
+    const [view, setView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('public');
+    return view === 'public' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$public$2f$LandingPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        onEnterAdmin: ()=>setView('admin')
+    }, void 0, false, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 11,
+        columnNumber: 7
+    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$AdminDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        onBackToPublic: ()=>setView('public')
+    }, void 0, false, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 12,
+        columnNumber: 7
+    }, this);
+}
+_s(Home, "/VSa5xB2rKTvZTmPYnNSTxuZtpE=");
+_c = Home;
+var _c;
+__turbopack_context__.k.register(_c, "Home");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=src_34ab3b31._.js.map
